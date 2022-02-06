@@ -12,8 +12,8 @@ import org.junit.Assert;
 public class LoginStepDefs {
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() throws InterruptedException {
-        String url = ConfigurationReader.get("url");
-        //WebDriver driver = Driver.get();
+       String url = ConfigurationReader.get("url");
+        //WebDriver driver = Driver.get();  //Driver.get().get("https://qa1.vytrack.com");
         Driver.get().get(url);
 
     }
