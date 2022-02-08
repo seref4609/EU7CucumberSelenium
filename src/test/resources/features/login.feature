@@ -2,9 +2,12 @@
   @login
 Feature: User should be able to login
 
+  Background:
+    Given the user is on the login page
+
+
   @driver   @smoke
   Scenario: Login as a driver
-    Given the user is on the login page
     When the user enters the driver information
     Then the user should be able to login
 

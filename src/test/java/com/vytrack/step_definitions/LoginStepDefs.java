@@ -37,8 +37,8 @@ public class LoginStepDefs {
 
     @When("the user enters the sales manager information")
     public void the_user_enters_the_sales_manager_information() throws InterruptedException {
-        String username = ConfigurationReader.get("sales_manager_username");
-        String password = ConfigurationReader.get("sales_manager_password");
+        String username = ConfigurationReader.get("salesmanager_username");
+        String password = ConfigurationReader.get("salesmanager_password");
 
         LoginPage loginPage = new LoginPage();
         loginPage.login(username, password);
