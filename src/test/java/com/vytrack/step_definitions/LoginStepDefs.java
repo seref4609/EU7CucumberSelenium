@@ -47,8 +47,8 @@ public class LoginStepDefs {
 
     @When("the user enters the store manager information")
     public void the_user_enters_the_store_manager_information() {
-        String username = ConfigurationReader.get("store_manager_username");
-        String password = ConfigurationReader.get("store_manager_password");
+        String username = ConfigurationReader.get("storemanager_username");
+        String password = ConfigurationReader.get("storemanager_password");
 
         LoginPage loginPage = new LoginPage();
         loginPage.login(username, password);
