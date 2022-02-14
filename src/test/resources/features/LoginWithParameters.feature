@@ -10,6 +10,7 @@ Feature: Login as different users
 
    #homework
   @HW
+
   Scenario: login as a driver
     Given the user is on the login page
     Given the user logged in as "storeManager"

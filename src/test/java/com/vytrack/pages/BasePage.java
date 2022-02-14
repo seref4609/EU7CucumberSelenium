@@ -20,7 +20,6 @@ public abstract class BasePage {
     public List<WebElement> menuOptions;
 
 
-
     @FindBy(css = "div[class='loader-mask shown']")
     @CacheLookup
     protected WebElement loaderMask;
