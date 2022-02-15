@@ -44,7 +44,7 @@ public class NavigationMenuStepDefs {
 
     @When("the user navigates to {string} {string}")
     public void the_user_navigates_to(String tab, String module) {
-        new DashboardPage().navigateToModule(tab,module);
+        new DashboardPage().navigateToModule(tab, module);
     }
 
 
@@ -52,11 +52,10 @@ public class NavigationMenuStepDefs {
     public void default_page_number_should_be(Integer expectedPageNum) {
         BrowserUtils.waitFor(3);
         ContactsPage contactsPage = new ContactsPage();
-        Integer actualNumber =Integer.parseInt(contactsPage.pageNumber.getAttribute("value"));
+        Integer actualNumber = Integer.parseInt(contactsPage.pageNumber.getAttribute("value"));
 
-        Assert.assertEquals(expectedPageNum,actualNumber);
+        Assert.assertEquals(expectedPageNum, actualNumber);
     }
-
 
 
 }
